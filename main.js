@@ -10,6 +10,7 @@ switch (principal) {
         alert("Los comandos son 'ESC', 'CALCULADORA' y 'RR'")
         return asistente();
     case "ESC":
+        alert("Adios" + " " + usuarioc + ", que tenga un buen día")
         break
         ;
     case "CALCULADORA":
