@@ -1,7 +1,18 @@
-alert("Buenos días, soy su asistente de google personal");
-let usuario = prompt("Ingrese su nombre de usuario");
-var usuarioc = usuario;
-alert("¿En qué lo puedo ayudar:" + " " + usuarioc + "?");
+function intro(usuario) {
+    usuario = prompt("¿Cuál es su nombre?")
+    switch (usuario) {
+        case "":
+            alert("Error, introduzca un nombre válido")
+            
+            return intro();
+    
+        default:
+            alert("Buenos días usuario:" + " " + usuario)
+            asistente();
+    }
+    
+}
+intro();
 
 function asistente(principal) {
     principal = prompt("Diga un comando o utilize 'HELP' para conocerlos").toUpperCase();
@@ -29,7 +40,7 @@ switch (principal) {
 } {
     
 }
-asistente();
+
 
 function calc(cuenta, n1, n2, operacion) {
     operacion = prompt("elija '+' para suma, '-' para resta, '*' para multiplicar, o '/' para dividir. También puede utilizar 'ESC' para salir de la calculadora").toUpperCase();
