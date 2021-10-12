@@ -20,15 +20,15 @@ switch (principal) {
     case "HELP":
         alert("Los comandos son 'ESC', 'CALCULADORA' y 'RR'")
         return asistente();
-    case "ESC":
-        
-        break
-        ;
+   
     case "CALCULADORA":
         calc();
     case "RR":
         alert("Never gonna give you up, never gonna let you down, never gonna run around and desert you...")
         return asistente();
+    case "ESC":
+        
+        break
 
 
     default:
